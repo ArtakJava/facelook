@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    background-color: aqua;
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 900px;
+    height: 600px;
+    position: relative;
+}
+
+.block {
+    height: 100%;
+    background-color: aquamarine;
+    box-shadow: 0 4px 50px;
+    display:  flex;
+    align-items:  center;
+}
+
+.block-section {
+    text-align: center;
+    width: 50%;
+}
+
+.block-section_title {
+    font-size: large;
+    font-weight: 700;
+    color:black;
+    margin-bottom: 10px;
+}
+
+.block-section_button {
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: beige;
+    color:blue;
+    font-size: large;
+    font-weight: 500;
+}
+
+.form_box {
+    background-color: aliceblue;
+    height: 100%;
+    width: 50%;
+    box-shadow: 0 4px 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.form_box.active {
+    left: 50%;
+}
+
+.form {
+    width: 100%;
+    padding: 100px;
+    font-size: 15px;
+    position: absolute;
+}
+
+.form_sign_in {
+    left: 0;
+}
+
+.form_sign_up {
+    left: 100%;
+}
+
+.form_box.active .form_sign_in {
+    left: -100%;
+}
+
+.form_box.active .form_sign_up {
+    left: 0%;
+}
+
+.form_title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: darkslategrey;
+}
+
+.form_input {
+    width: 15rem;
+    padding: 10px;
+    border: solid 1px;
+    font-size: inherit;
+}
+
+.form_button {
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+    background-color: rgb(33, 67, 216);
+    color: aliceblue;
+    padding: 10px 45px;
+}
+
+.form_button_sign_up {
+    background-color: tomato;
+}
+
+.form_forgot {
+    color: black;
+}
